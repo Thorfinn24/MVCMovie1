@@ -1,0 +1,89 @@
+﻿
+body {
+    background-color: black;
+    color: white;
+}
+
+.top {
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    color: darkorange;
+}
+
+.left-top {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.webname {
+    font-family: Bahnschrift;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+    .navbar li {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        color: darkorange;
+    }
+
+a {
+    font-size: 24px;
+    font-family: Bahnschrift;
+    color: darkorange;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: darkgrey;
+}
+
+.movies {
+    height: 240px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6rem;
+    padding: 16px;
+}
+
+.movie {
+    background-color: darkorange;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.cur-mov-box {
+    position: relative;
+    height: 160px;
+    width: 70%;
+    padding-left: 3rem;
+    overflow: hidden;
+}
+
+.btn {
+    background-color: black;
+    text-decoration-line: none;
+    color: darkorange;
+    border-radius: 16px;
+    padding: 7px;
+}
+
+.mov-title {
+    margin-bottom: .2rem;
+}
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}

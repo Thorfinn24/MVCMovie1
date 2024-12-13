@@ -1,0 +1,91 @@
+﻿@model MVCMovie1.Models.MovieTicket
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<body>
+    <div class="top">
+        <div class="left-top">
+            <h1 class="webname">ROGUE</h1>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Theaters</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="movies">
+        <div class="movie">
+            <div class="cur-mov-box">
+                <img src="~/Mov images/machinist.jpeg" class="movies">
+            </div>
+            <h3 class="mov-title">The Machinist</h3>
+            <p>Screen: Roblox</p>
+            <div class="booking">
+                <h2 class="Price">7$</h2>
+                <a href="~/Views/Default/Create.cshtml" target="_blank" class="btn" onclick="window.open('@Url.Action("Create","Default")')">Buy Tickets</a>
+            </div>
+
+        </div>
+        <div class="movie">
+            <div class="cur-mov-box">
+                <img src="~/Mov images/into the wild.jpg" class="movies">
+            </div>
+            <h3 class="mov-title">Into The Wild</h3>
+            <p>Screen: Roblox</p>
+            <div class="booking">
+                <h2 class="Price">7$</h2>
+                <a href="~/Views/Default/Create.cshtml" target="_blank" class="btn" onclick="window.open('@Url.Action("Create","Default")')">Buy Tickets</a>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="cur-mov-box">
+                <img src="~/Mov images/Fight club.jpg" class="movies">
+            </div>
+            <h3 class="mov-title">Fight Club</h3>
+            <p>Screen: Roblox</p>
+            <div class="booking">
+                <h2 class="Price">7$</h2>
+                <a href="~/Views/Default/Create.cshtml" target="_blank" class="btn" onclick="window.open('@Url.Action("Create","Default")')">Buy Tickets</a>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="cur-mov-box">
+                <img src="~/Mov images/machinist.jpeg" class="movies">
+            </div>
+            <h3 class="mov-title">The Machinist</h3>
+            <p>Screen: Roblox</p>
+            <div class="booking">
+                <h2 class="Price">7$</h2>
+                <a href="~/Views/Default/Create.cshtml" target="_blank" class="btn" onclick="window.open('@Url.Action("Create","Default")')">Buy Tickets</a>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="cur-mov-box">
+                <img src="~/Mov images/into the wild.jpg" class="movies">
+            </div>
+            <h3 class="mov-title">Into The Wild</h3>
+            <p>Screen: Roblox</p>
+            <div class="booking">
+                <h2 class="Price">7$</h2>
+                <a href="~/Views/Default/Create.cshtml" target="_blank" class="btn" onclick="window.open('@Url.Action("Create","Default")')">Buy Tickets</a>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="cur-mov-box">
+                <img src="~/Mov images/Fight club.jpg" class="movies">
+            </div>
+            <h3 class="mov-title">Fight Club</h3>
+            <p>Screen: Roblox</p>
+            <div class="booking">
+                <h2 class="Price">7$</h2>
+                <a href="~/Views/Default/Create.cshtml" target="_blank" class="btn" onclick="window.open('@Url.Action("Create","Default")')">Buy Tickets</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

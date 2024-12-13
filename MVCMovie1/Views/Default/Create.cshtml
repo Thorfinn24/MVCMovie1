@@ -1,0 +1,76 @@
+﻿@model MVCMovie1.Models.MovieTicket
+
+@{
+    ViewBag.Title = "TICKET BOOKING";
+}
+
+<h2>ROGUE</h2>
+
+
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            color: orange;
+        }
+
+        .btn2 {
+            font-size: 1.6rem;
+            padding: 0.7rem 2.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    @using (Html.BeginForm("Create", "Default", FormMethod.Post))
+
+    {
+        <h3>ID</h3>
+        @Html.TextBoxFor(model => model.ID)
+
+        <h3>Username</h3>
+        @Html.TextBoxFor(model => model.Username)
+
+        <h3>Phone Number</h3>
+        @Html.TextBoxFor(model => model.Phone)
+
+        <h3>Email</h3>
+        @Html.TextBoxFor(model => model.Email)
+
+        <h3>Password</h3>
+        @Html.TextBoxFor(model => model.Password1)
+
+        <h3>ConfirmPassword</h3>
+        @Html.TextBoxFor(model => model.ConfirmPassword)
+
+        <h3>Movie</h3>
+        @Html.TextBoxFor(model => model.Moviename)
+
+        <h3>Date</h3>
+        @Html.TextBoxFor(model => model.Date1)
+
+        <h3>Tickets</h3>
+        @Html.TextBoxFor(model => model.TicketsCount)
+        <br />
+        <br />
+        <br />
+        <input class="btn2" type="submit" value="Submit" onclick="btnfunction()" />
+
+
+        <p>
+            @Html.ActionLink("To view details", "Details")
+        </p>
+    }
+
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+    }
+
+</body>
+</html>
